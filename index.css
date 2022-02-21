@@ -1,6 +1,6 @@
 :root {
     --text-color: rgb(157, 236, 211);
-    --width-main : 400px;
+    --width-main : 300px;
     --heigth-main : calc(var(--width-main) / 4 * 5);
     --color-block: rgb(0, 0, 0);
 }
