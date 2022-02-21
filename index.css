@@ -1,0 +1,76 @@
+:root {
+    --text-color: rgb(157, 236, 211);
+    --width-main : 400px;
+    --heigth-main : calc(var(--width-main) / 4 * 5);
+    --color-block: rgb(0, 0, 0);
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: calc(var(--width-main) / 22.22);
+    font-family: Roboto;
+}
+
+.phim {
+    position: relative;
+    display: block;
+    margin-left: calc(50% - var(--width-main) / 2);
+    margin-top: calc(var(--width-main) / 4);
+    width: calc(var(--width-main));
+    height: var(--heigth-main);
+    border: 1px solid black;
+    background-color: rgb(237, 240, 229);
+    border-radius: 8px;
+}
+
+.so, .tn{
+    width: calc(var(--width-main) / 4 - var(--heigth-main) / 25 );
+    height: calc(var(--width-main) / 4 - var(--heigth-main) / 25 );
+    margin: calc(var(--heigth-main) / 50 ) calc(var(--heigth-main) / 50 - var(--width-main) / 150);
+    border-radius: 50%;
+    border-color: var(--color-block);
+    background-color: var(--text-color);
+}
+
+.so_text {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%);
+    width: calc(var(--heigth-main) / 10);
+    font-size: calc(var(--width-main) / 14.28);
+    color: rgb(196, 67, 172);
+}
+
+#ket_qua {
+    position: absolute;
+    bottom: calc(var(--heigth-main) / 80 );
+    left: calc(var(--width-main) / 4 + var(--width-main) / 40 );
+    display: block;
+    width: calc((var(--width-main) / 4 - var(--heigth-main) / 25) * 3 + var(--heigth-main) / 25 * 2 - var(--width-main) / 40);
+    height: calc(var(--width-main) / 4 - var(--heigth-main) / 25 );
+    background-color: var(--text-color);
+    border-radius: 6px;
+    border: 2px solid var(--color-block);
+}
+
+#xuat {
+    color: black;
+    height: calc(var(--heigth-main) / 20);
+    font-size: calc(var(--width-main) / 20);
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#tam {
+    position: absolute;
+    bottom: calc(var(--width-main) / -26.66);
+    height: calc(var(--heigth-main) / 10);
+    color: black;
+    font-size: calc(var(--width-main) / 12);
+    margin-left: calc(var(--heigth-main) / 10);
+}
+
+.color:hover {
+    background-color: yellowgreen;
+}
